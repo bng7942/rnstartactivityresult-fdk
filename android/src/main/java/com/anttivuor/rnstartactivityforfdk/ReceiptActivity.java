@@ -61,7 +61,7 @@ public class ReceiptActivity extends AppCompatActivity {
 
             if(null != getIntent().getData()){
                 callbackData = getIntent().getData();
-                ((TextView)findViewById(R.id.txt_receipt)).setText(showReceipData());
+                // ((TextView)findViewById(R.id.txt_receipt)).setText(showReceipData());
             }
         }
     }
