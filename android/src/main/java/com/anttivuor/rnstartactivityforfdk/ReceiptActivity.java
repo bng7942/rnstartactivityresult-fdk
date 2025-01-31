@@ -139,12 +139,12 @@ public class ReceiptActivity extends AppCompatActivity {
         return strResult.toString();
     }
     public void closeReceipt(View v){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, RNStartActivityForFdkModule.class);
         startActivity(intent);
         finish();
     }
     public void goCancel(View v){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, RNStartActivityForFdkModule.class);
         intent.putExtra("callbackData", callbackData.toString());
         startActivity(intent);
         finish();
