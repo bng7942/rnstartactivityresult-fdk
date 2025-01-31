@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-// import android.widget.TextView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ import java.io.UnsupportedEncodingException;
 
 public class ReceiptActivity extends AppCompatActivity {
 
-    // TextView txt_receipt;
+    TextView txt_receipt;
     Uri callbackData = null;
     Context mContext;
     String payType, approvalType, bizNum, ownerName, storeName, storeAddress, storeTel, memberNum, supplyAmount, vatAmount, totalAmount, cardNum,
@@ -25,7 +25,7 @@ public class ReceiptActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_receipt);
+        setContentView(R.layout.activity_receipt);
         mContext = this;
         CallbackDataProcess();
     }
@@ -61,7 +61,7 @@ public class ReceiptActivity extends AppCompatActivity {
 
             if(null != getIntent().getData()){
                 callbackData = getIntent().getData();
-                // ((TextView)findViewById(R.id.txt_receipt)).setText(showReceipData());
+                ((TextView)findViewById(R.id.txt_receipt)).setText(showReceipData());
             }
         }
     }

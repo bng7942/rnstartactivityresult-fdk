@@ -4,7 +4,6 @@
 
     <application
         android:supportsRtl="true"
-        android:theme="@style/Theme.FinPayVCat_Service_Sample"
         tools:targetApi="31">
         <service
             android:name=".RNStartActivityForFdkModule"
@@ -13,7 +12,6 @@
         <activity
             android:name=".ReceiptActivity"
             android:launchMode="singleTask"
-            android:theme="@style/Theme.FinPayVCat_Service_Sample"
             android:noHistory="true"
             android:exported="true">
             <intent-filter>
