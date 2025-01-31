@@ -3,7 +3,7 @@
  */
 
 import { NativeModules } from "react-native";
-var RNStartActivityForFdik = NativeModules.RNStartActivityForFdik || {};
+var RNStartActivityForFdk = NativeModules.RNStartActivityForFdk || {};
 
 var startActivityForFdk = (
     key, uri, action, cardCashSe, delngSe, total, 
@@ -12,7 +12,7 @@ var startActivityForFdk = (
     cashNum, trmnlno, prdctNo, bizNo, uscMuf, REFERENCE_NO,
     KakaoDiscount, KakaoPayType, PaycoDiscount, PaycoPayType, cupDeposit) => {
     
-    return RNStartActivityForFdik.startActivityForFdk(
+    return RNStartActivityForFdk.startActivityForFdk(
         key, uri, action, cardCashSe, delngSe, total, vat, taxxpt, 
         instlmtMonth, callbackAppUr, aditInfo, srcConfmNo, srcConfmDe, barcodeNum,
         cashNum, trmnlno, prdctNo, bizNo, uscMuf, REFERENCE_NO,
